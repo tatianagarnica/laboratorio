@@ -18,11 +18,11 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <?php include("views/modulos/header.php");?>
+  <?php include("./modulos/head.php");?>
   <!-- /.n avbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include("views/modulos/menu.php");?>
+  <?php include("./modulos/menu.php");?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper iframe-mode" data-widget="iframe" data-loading-screen="750">
@@ -39,7 +39,7 @@
     </div>
   </div>
   <!-- /.content-wrapper -->
-  <?php include("views/modulos/footer.php");?>
+  <?php include("./modulos/footer.php");?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
