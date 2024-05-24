@@ -1,3 +1,9 @@
+<?php
+define("BASE URL","/ARCHIVO/views/");
+require_once("../config/conecxion.php");
+if (isset($_SESSION["usu_id"]))
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,3 +73,6 @@
 <script src="dist/js/demo.js"></script>
 </body>
 </html>
+<?php
+header("location:". conectar::ruta() ."/ARCHIVO/views/404.php") 
+?>

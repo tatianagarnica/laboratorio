@@ -1,8 +1,4 @@
-<?php 
-define("BASE URL","/ARCHIVO/views");
-require_once("../config/conecxion.php");
-if (isset($_SESSION["usu_id"]))
-?>
+
 <?php 
    require_once("../config/conecxion.php");
 
@@ -20,7 +16,7 @@ if (isset($_SESSION["usu_id"]))
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | Log in</title>
 
-  <?php include("./modulos/head.php");?>
+  <?php include("../views/modulos/head.php");?>
 
 </head>
 <body class="hold-transition login-page">
