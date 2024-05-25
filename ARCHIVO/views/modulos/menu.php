@@ -11,7 +11,8 @@
         <div class="image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <input type="hidden" id="usu_idx" value="<?php echo $_SESSION["usu_id"] ?>">
+          <a href="#" class="d-block"><?php echo $_SESSION["usu_nom"];?></a>
         </div>
       </div>
 
@@ -25,19 +26,19 @@
                with font-awesome or any other icon font library -->
         
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="inicio.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
+                inicio
                 
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/PARCIAL/ARCHIVO/views/perfil.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
+                Perfil
                 
               </p>
             </a>

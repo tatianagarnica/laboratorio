@@ -22,77 +22,79 @@
 </ul>
 </div>
 <body>
-    <div class="form-body">
-        <div class="row">
-            <div class="form-holder">
-                <div class="form-content">
-                    <div class="form-items">
-                        <h3>Register Today</h3>
-                        <p>Fill in the data below.</p>
-                        <form class="requires-validation" novalidate>
-
-                            <div class="col-md-12">
-                               <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                               <div class="valid-feedback">Username field is valid!</div>
-                               <div class="invalid-feedback">Username field cannot be blank!</div>
-                            </div>
-
-                            <div class="col-md-12">
-                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                                 <div class="valid-feedback">Email field is valid!</div>
-                                 <div class="invalid-feedback">Email field cannot be blank!</div>
-                            </div>
-
-                           <div class="col-md-12">
-                                <select class="form-select mt-3" required>
-                                      <option selected disabled value="">Position</option>
-                                      <option value="jweb">Junior Web Developer</option>
-                                      <option value="sweb">Senior Web Developer</option>
-                                      <option value="pmanager">Project Manager</option>
-                               </select>
-                                <div class="valid-feedback">You selected a position!</div>
-                                <div class="invalid-feedback">Please select a position!</div>
-                           </div>
-
-
-                           <div class="col-md-12">
-                              <input class="form-control" type="password" name="password" placeholder="Password" required>
-                               <div class="valid-feedback">Password field is valid!</div>
-                               <div class="invalid-feedback">Password field cannot be blank!</div>
-                           </div>
-
-
-                           <div class="col-md-12 mt-3">
-                            <label class="mb-3 mr-1" for="gender">Gender: </label>
-
-                            <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                            <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                            <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
-                               <div class="valid-feedback mv-up">You selected a gender!</div>
-                                <div class="invalid-feedback mv-up">Please select a gender!</div>
-                            </div>
-
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                          <label class="form-check-label">I confirm that all data are correct</label>
-                         <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
-                        </div>
-                  
-
-                            <div class="form-button mt-3">
-                                <button id="submit" type="submit" class="btn btn-primary">Register</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="background">
+<section id="contact">
+  
+  <h1 class="section-header">Contact</h1>
+  
+  <div class="contact-wrapper">
+  
+  <!-- Left contact page --> 
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
         </div>
-    </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- Left contact page --> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+  
+  
 <script> scr= "./contacto.js"</script>
 </body>
 </html>

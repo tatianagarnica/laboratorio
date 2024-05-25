@@ -1,16 +1,7 @@
-(function () {
-    'use strict'
-    const forms = document.querySelectorAll('.requires-validation')
-    Array.from(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-    
-          form.classList.add('was-validated')
-        }, false)
-      })
-    })()
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  e.target.elements.name.value = '';
+  e.target.elements.email.value = '';
+  e.target.elements.message.value = '';
+});
     
