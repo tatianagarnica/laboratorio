@@ -20,6 +20,22 @@ if (isset($_SESSION["usu_id"])){
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="../public/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
 </head>
+<style>
+    .row img {
+        display: block;
+  float: left;
+  width: 120px;
+  aspect-ratio: 2/2;
+  max-width: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  image-rendering: pixelated;   
+    }
+    .row h4{
+        font-size: 12px;
+    }
+</style>
 <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
 <div class="wrapper">
 
@@ -44,16 +60,16 @@ if (isset($_SESSION["usu_id"])){
                             <div class="card-body pt-0">
                                 <div class="row">
                                     <div class="col-7">
-                                        <h2 class="lead"><b>ALEXANDER HIGUERA</b></h2>
-                                        <h4 class="lead"><b>alexander.higuera@uniminuto.edu</b></h4>
-                                        <p class="text-muted text-sm"><b>About: </b> Estudiante de ingenieria de sistemas y software. </p>
+                                        <h2 class="lead"><b>TATIANA GARNICA</b></h2>
+                                        <h4 class="lead"><b>angie.garnica@uniminuto.edu</b></h4>
+                                        <p class="text-muted text-sm"><b>Carrera: </b> Estudiante de ingenieria de sistemas y software. </p>
                                         <ul class="ml-4 mb-0 fa-ul text-muted">
-                                            <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Girardot-Cundinamarca</li>
-                                            <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: 3114661605</li>
+                                            <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Recidencia: Girardot-Cundinamarca</li>
+                                            <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span>  Telefono: 3212702557</li>
                                         </ul>
                                     </div>
                                     <div class="col-5 text-center">
-                                        <img src="./imagenes/mis xv-5.jpg" alt="user-avatar" class="img-circle img-fluid">
+                                        <img src="../imagen/mis xv-5.jpg"alt="user-avatar" class="img-circle img-fluid">
                                     </div>
                                 </div>
                             </div>

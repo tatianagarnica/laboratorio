@@ -1,4 +1,6 @@
+<?php include("../views/modulos/head.php");?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -27,7 +29,7 @@
         
           <li class="nav-item">
             <a href="inicio.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class='bx bx-home-heart'></i>
               <p>
                 inicio
                 
@@ -36,7 +38,7 @@
           </li>
           <li class="nav-item">
             <a href="/PARCIAL/ARCHIVO/views/perfil.php" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class='bx bxs-user-circle'></i>
               <p>
                 Perfil
                 
@@ -45,18 +47,53 @@
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class='bx bx-book-heart'></i>
               <p>
-                Widgets
+                Estudios
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+            <i class='bx bx-info-circle'></i>
+              <p>
+                Informacion Personal
                 
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class='bx bxs-bar-chart-square'></i>
               <p>
-                Widgets
+                Trabajos Realizados
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+            <i class='bx bx-briefcase'></i>
+              <p>
+                Experiencia
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+            <i class='bx bx-shape-polygon'></i>
+              <p>
+               Social Media
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/PARCIAL/ARCHIVO/views/logout.php" class="nav-link">
+            <i class='bx bx-left-arrow-alt'></i>
+              <p>
+               Salir
                 
               </p>
             </a>
