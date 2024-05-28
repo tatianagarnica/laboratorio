@@ -119,10 +119,18 @@ if (isset($_SESSION["usu_id"])){
     </div>
 
     <div class="card-footer">
-        <p class="parr1">Titulo</p>
-        <p class="parr2">Lugar</p>
-        <p class="parr3">Año</p>
-        <p class="parr4">Tipo</p>
+    <table id="soacialmedia_data" class="table display responsive wrap">
+    <thead>
+        <tr>
+            <th class="wd-15p">Titulo</th>
+            <th class="wd-15p">Lugar</th>
+            <th class="wd-10p">Año</th>
+            <th class="wd-10p">Tipo</th>
+        </tr>
+    </thead>
+
+
+</table>
     </div>
 
     </div>
@@ -162,6 +170,10 @@ if (isset($_SESSION["usu_id"])){
 <script src="../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+<?php require_once("/xampp/htdocs/PARCIAL/ARCHIVO/views/modelestudios.php");?>
+
+<?php require_once("/xampp/htdocs/PARCIAL/ARCHIVO/views/modulos/js.php");?>
+<script type="text/javascript" src="./js/estudios.js"></script>
 </body>
 </html>
 <?php

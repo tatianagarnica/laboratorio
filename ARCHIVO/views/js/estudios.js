@@ -1,14 +1,14 @@
 var usu_id = $('#usu_idx').var();
 function init(){
-    $('#socialmedia_form').on("submit",function(e){
+    $('#estudios_form').on("submit",function(e){
         guardaryeditar(e);
     });
 }
 function guardaryeditar(e){
     e.preventDefault();
-    var formData = new FormData($('#socialmedia_from'[0]));
+    var formData = new FormData($('#estudios'[0]));
     $. ajax({
-        url:"/ARCHIVO/controller/social_media.php?op=guardaryeditar",
+        url:"/ARCHIVO/controller/estudios.php?op=guardaryeditar",
         type:"POST",
         data:formData,
         contentType:false,
@@ -16,8 +16,8 @@ function guardaryeditar(e){
 
         success: function(data){
             console.log(data);
-            $('#socialmedia_data').DataTable().ajax.reload();
-            $('#modalcrearredes').modal('hide');
+            $('#estudios_data').DataTable().ajax.reload();
+            $('#modalcrearestudios').modal('hide');
 
             Swal.fire({
                 title:'correcto',
@@ -29,7 +29,7 @@ function guardaryeditar(e){
     });
 }
 $(document).ready(function(){
-    $('#socialmedia_data').DataTable({
+    $('#estudios_data').DataTable({
         "aProcessing":true,
         "aServer":true,
         dom:'Bfrtip',
@@ -38,7 +38,7 @@ $(document).ready(function(){
             'csvHtml5',
         ],
         "ajax":{
-            url:"/ARCHIVO/controller/social_media.php?op=listar",
+            url:"/ARCHIVO/controller/estudios.php?op=listar",
             type:"post"
         },
         "bDestroy":true,
@@ -73,21 +73,23 @@ $(document).ready(function(){
     });
 })
 function nuevo(){
-    $('#titulo_modal').html('Nueva Red Social');
+    $('#titulo_modal').html('Nuevo Estudio');
     //$('#socialMedia_form')[0].reset();
-    $('#modalcrearRedes').modal('show');
+    $('#modalcrearestudios').modal('show');
 }
-function editar(socmed_id){
-    $.post("/ARCHIVO/controller/social_media.php?op=mostrar",{socmed_id:socmed_id},function(data){
+function editar(est_id){
+    $.post("/ARCHIVO/controller/estudios.php.php?op=mostrar",{est_id:est_id},function(data){
         data = JSON.parse(data);
-        $('#socmed_id').val(data.socmed_id);
-        $('#socmed_icono').val(data.socmed_icono);
-        $('#socmed_url').val(data.socmed_url);
+        $('#est_id').val(data.est_id);
+        $('#est_titulo').val(data.est_titulo);
+        $('#est_lugar').val(data.est_lugar);
+        $('#est_anno').val(data.est_anno);
+        $('#est_tipo').val(data.est_tipo);
     });
-    $('#titulo_modal').html('editar red');
-    $('#modalcrearredes').modal('show');
+    $('#titulo_modal').html('editar estudios');
+    $('#modalcrearestudios').modal('show');
 }
-function eliminar(socmed_id){
+function eliminar(est_id){
     Swal.fire({
         title: 'eliminar',
         text: 'deseas eliminar el resgistro?',
@@ -97,11 +99,11 @@ function eliminar(socmed_id){
         cancelButtonText:'cancelar'
     }).then((result)=>{
         if (result.value){
-            $.post("/ARCHIVO/controller/social_media.php?op=eliminar",{socmed_id:socmed_id}, function(data){
-                $('#socialmedia_data').DataTable().ajax.reload();
+            $.post("/ARCHIVO/controller/estudios.php?op=eliminar",{est_id:est_id}, function(data){
+                $('#estudios_data').DataTable().ajax.reload();
                 Swal.fire({
                     title:'correcto',
-                    text:'seelimino correctamente',
+                    text:'se elimino correctamente',
                     icon:'success',
                     confirButtonText:'aceptar'
                 })

@@ -160,9 +160,10 @@ if (isset($_SESSION["usu_id"])){
 <script src="../dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
+<?php require_once("/xampp/htdocs/PARCIAL/ARCHIVO/views/modalsocialmedia.php");?>
 
-<?php require_once("modulos/js.php");?>
-<script type="text/javascript" src="js/socialMedia.js"></script>
+<?php require_once("/xampp/htdocs/PARCIAL/ARCHIVO/views/modulos/js.php");?>
+<script type="text/javascript" src="./js/socialMedia.js"></script>
 
 </body>
 </html>
