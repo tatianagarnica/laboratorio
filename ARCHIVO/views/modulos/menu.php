@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/PARCIAL/ARCHIVO/views/estudios.php" class="nav-link">
             <i class='bx bx-book-heart'></i>
               <p>
                 Estudios
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/PARCIAL/ARCHIVO/views/informacionPersonal.php" class="nav-link">
             <i class='bx bx-info-circle'></i>
               <p>
                 Informacion Personal
@@ -63,16 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
-            <i class='bx bxs-bar-chart-square'></i>
-              <p>
-                Trabajos Realizados
-                
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/PARCIAL/ARCHIVO/views/experiencia.php" class="nav-link">
             <i class='bx bx-briefcase'></i>
               <p>
                 Experiencia
@@ -81,7 +72,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/PARCIAL/ARCHIVO/views/socialMedia.php" class="nav-link">
             <i class='bx bx-shape-polygon'></i>
               <p>
                Social Media

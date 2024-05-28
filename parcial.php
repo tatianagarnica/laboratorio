@@ -483,6 +483,7 @@ h3{
   <div class="container">
     <div class="box">
       <div class="content">
+      <i class='bx bxl-whatsapp'></i>
         <img src="./imagenes/envelope-solid-24.png" alt="">
         <h3>Correo</h3>
         <p>angiegarnica@gmail.com</p> 
